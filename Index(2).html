@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Light - Esoteric Healing Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cosmic-bg" id="cosmicBg"></div>
+    
+    <div class="container">
+        <header class="header">
+            <h1>Inner Light</h1>
+            <p class="subtitle">Esoteric Healing Through Self-Discovery</p>
+        </header>
+
+        <div class="journey-steps">
+            <div class="step" onclick="toggleStep(this)">
+                <span class="step-number">1</span>
+                <h3 class="step-title">Acknowledge the Inner Voice</h3>
+                <div class="step-content">
+                    <p>Begin by reconnecting with your inner wisdom - the voice that knows your truth beyond ego and external validation.</p>
+                    <div class="step-expanded">
+                        <p><strong>Practice:</strong> Sit quietly for 10 minutes daily. Listen without judgment to the thoughts that arise. Notice the difference between ego-driven thoughts and deeper wisdom.</p>
+                        <p><strong>Reflection:</strong> "The confidence in knowing myself is my power. It is my security."</p>
+                        <p><strong>Action:</strong> Journal about moments when you trusted your inner guidance versus when you ignored it.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step" onclick="toggleStep(this)">
+                <span class="step-number">2</span>
+                <h3 class="step-title">Transform Darkness into Light</h3>
+                <div class="step-content">
+                    <p>Every dark moment contains the seed of illumination. Your struggles are not obstacles but pathways to wisdom.</p>
+                    <div class="step-expanded">
+                        <p><strong>Practice:</strong> When facing difficult emotions, ask: "What is this teaching me about myself?" Write down three lessons from your darkest moments.</p>
+                        <p><strong>Meditation:</strong> Visualize light entering the areas of your life that feel heavy or stuck.</p>
+                        <p><strong>Affirmation:</strong> "Within the dark, I finally came to see me for who I really was. I was awakened."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step" onclick="toggleStep(this)">
+                <span class="step-number">3</span>
+                <h3 class="step-title">Embrace Constant Change</h3>
+                <div class="step-content">
+                    <p>Accept that you are not the same person you were yesterday. Growth requires letting go of fixed self-definitions.</p>
+                    <div class="step-expanded">
+                        <p><strong>Practice:</strong> Each morning, set an intention to remain open to who you might become today.</p>
+                        <p><strong>Exercise:</strong> Write down 5 ways you've changed in the past year. Celebrate this evolution.</p>
+                        <p><strong>Mantra:</strong> "To define who I am through words would be a waste, as I change on a daily basis."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step" onclick="toggleStep(this)">
+                <span class="step-number">4</span>
+                <h3 class="step-title">Seek Within, Not Without</h3>
+                <div class="step-content">
+                    <p>All the answers you seek exist within you. External seeking creates dependency; inner seeking creates sovereignty.</p>
+                    <div class="step-expanded">
+                        <p><strong>Practice:</strong> Before asking others for advice, spend 20 minutes in silence asking yourself the same question.</p>
+                        <p><strong>Contemplation:</strong> "Those who have become aware seek God within themselves, not without."</p>
+                        <p><strong>Daily Ritual:</strong> Create a sacred space for daily inner communion - meditation, prayer, or quiet reflection.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step" onclick="toggleStep(this)">
+                <span class="step-number">5</span>
+                <h3 class="step-title">Live Through Self-Expression</h3>
+                <div class="step-content">
+                    <p>Your authentic expression is your gift to the world. Art, writing, movement - find your unique voice.</p>
+                    <div class="step-expanded">
+                        <p><strong>Practice:</strong> Dedicate time daily to creative expression without judgment or expectation of perfection.</p>
+                        <p><strong>Challenge:</strong> Try a new form of artistic expression each week - poetry, drawing, dancing, singing.</p>
+                        <p><strong>Truth:</strong> "I possess the soul of an artist, as I am a person who lives through self-expression."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step" onclick="toggleStep(this)">
+                <span class="step-number">6</span>
+                <h3 class="step-title">Master Self-Discipline</h3>
+                <div class="step-content">
+                    <p>True freedom comes from mastering yourself, not from external circumstances.</p>
+                    <div class="step-expanded">
+                        <p><strong>Practice:</strong> Choose one small daily discipline and commit to it for 30 days.</p>
+                        <p><strong>Wisdom:</strong> "One thing I highly recommend to everyone is SELF-DISCIPLINE. Learn it. Live it. Master it."</p>
+                        <p><strong>Application:</strong> Use discipline as a tool for self-discovery, not self-punishment.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step" onclick="toggleStep(this)">
+                <span class="step-number">7</span>
+                <h3 class="step-title">Find Value Within</h3>
+                <div class="step-content">
+                    <p>Your worth is not determined by external validation but by your connection to your authentic self.</p>
+                    <div class="step-expanded">
+                        <p><strong>Practice:</strong> Daily gratitude for three internal qualities you possess.</p>
+                        <p><strong>Meditation:</strong> "Within myself holds all the luxuries I could ever yearn for."</p>
+                        <p><strong>Goal:</strong> "Live to find value within" - make this your daily intention.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="meditation-timer">
+            <h2>Sacred Silence Timer</h2>
+            <div class="timer-display" id="timerDisplay">05:00</div>
+            <div class="timer-controls">
+                <button class="btn" onclick="startTimer()">Start</button>
+                <button class="btn" onclick="pauseTimer()">Pause</button>
+                <button class="btn" onclick="resetTimer()">Reset</button>
+                <button class="btn" onclick="setTimer(5)">5 min</button>
+                <button class="btn" onclick="setTimer(10)">10 min</button>
+                <button class="btn" onclick="setTimer(20)">20 min</button>
+            </div>
+        </div>
+
+        <div class="breathing-guide">
+            <h2>Conscious Breathing</h2>
+            <div class="breathing-circle" id="breathingCircle">
+                <span class="breathing-text" id="breathingText">Breathe</span>
+            </div>
+            <button class="btn" onclick="startBreathing()">Begin Breathing Exercise</button>
+        </div>
+
+        <div class="astro-generator">
+            <h2>Soul Personality Decoder</h2>
+            <p>Discover your esoteric soul blueprint through your Sun and Moon signs</p>
+            
+            <div class="birth-input">
+                <div class="input-group">
+                    <label for="birthDate">Birth Date:</label>
+                    <input type="date" id="birthDate" class="astro-input">
+                </div>
+                <div class="input-group">
+                    <label for="birthTime">Birth Time:</label>
+                    <input type="time" id="birthTime" class="astro-input">
+                </div>
+                <button class="btn astro-btn" onclick="generateSoulProfile()">Reveal Soul Blueprint</button>
+            </div>
+
+            <div id="soulProfile" class="soul-profile hidden">
+                <div class="sun-moon-container">
+                    <div class="sun-sign-card">
+                        <h3>☉ Your Soul's Radiance</h3>
+                        <div id="sunSignResult"></div>
+                    </div>
+                    <div class="moon-sign-card">
+                        <h3>☽ Your Inner Sanctuary</h3>
+                        <div id="moonSignResult"></div>
+                    </div>
+                </div>
+                <div class="soul-synthesis">
+                    <h3>✨ Soul Synthesis</h3>
+                    <div id="synthesisResult"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wisdom-quotes">
+            <div class="quote-card">
+                <div class="quote-text">"You lose your dignity when you allow someone else to define you."</div>
+                <div class="quote-author">- Tyler's Wisdom</div>
+            </div>
+            <div class="quote-card">
+                <div class="quote-text">"The confidence in knowing myself is my power. It is my security."</div>
+                <div class="quote-author">- Tyler's Wisdom</div>
+            </div>
+            <div class="quote-card">
+                <div class="quote-text">"Within the light I could only see what society wanted me to see. I was blinded. Now, in the dark, that is where I finally came to see me for who I really was."</div>
+                <div class="quote-author">- Tyler's Wisdom</div>
+            </div>
+            <div class="quote-card">
+                <div class="quote-text">"To truly know life is to live it."</div>
+                <div class="quote-author">- Tyler's Wisdom</div>
+            </div>
+        </div>
+
+        <div class="progress-tracker">
+            <h2>Your Inner Journey Progress</h2>
+            <p>Track your daily commitment to self-discovery</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+            </div>
+            <p id="progressText">0% Complete - Begin your journey within</p>
+            <button class="btn" onclick="updateProgress()">Mark Today's Practice Complete</button>
+        </div>
+
+        <footer class="footer">
+            <p>"Live to find value within" - Your journey to self-discovery is sacred and unique</p>
+            <p>Free healing app inspired by Tyler Hebert's autobiography</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
